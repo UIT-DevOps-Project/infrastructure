@@ -15,7 +15,7 @@ monitor_node_instance_type = "t3.small"
 
 # RDS Staging
 rds_staging_instance_class = "db.t3.micro"
-rds_staging_storage        = 20
+rds_staging_storage        = 25
 
 # RDS Production
 rds_production_instance_class = "db.t3.micro"
