@@ -10,7 +10,7 @@ cluster_version            = "1.32"
 app_node_instance_type     = "t3.small"
 app_node_min               = 2
 app_node_max               = 6
-app_node_desired           = 2
+app_node_desired           = 3
 monitor_node_instance_type = "t3.small"
 
 # RDS Staging

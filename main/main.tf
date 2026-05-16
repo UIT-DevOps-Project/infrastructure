@@ -134,6 +134,7 @@ module "rds_staging" {
   vpc_id                = module.vpc.vpc_id
   subnet_ids            = module.vpc.private_subnet_ids
   eks_node_sg_id        = module.eks.node_security_group_id
+  eks_cluster_sg_id     = module.eks.cluster_security_group_id
   instance_class        = var.rds_staging_instance_class
   allocated_storage     = var.rds_staging_storage
   multi_az              = false
@@ -151,6 +152,7 @@ module "rds_production" {
   vpc_id                = module.vpc.vpc_id
   subnet_ids            = module.vpc.private_subnet_ids
   eks_node_sg_id        = module.eks.node_security_group_id
+  eks_cluster_sg_id     = module.eks.cluster_security_group_id
   instance_class        = var.rds_production_instance_class
   allocated_storage     = var.rds_production_storage
   multi_az              = false

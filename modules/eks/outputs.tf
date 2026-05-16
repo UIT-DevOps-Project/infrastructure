@@ -20,6 +20,11 @@ output "node_security_group_id" {
   value       = aws_security_group.node.id
 }
 
+output "cluster_security_group_id" {
+  description = "Auto-created EKS cluster SG — SG này được AWS tự gắn vào nodes khi dùng managed node groups"
+  value       = aws_eks_cluster.main.vpc_config[0].cluster_security_group_id
+}
+
 output "aws_lb_controller_role_arn" {
   description = "IRSA Role ARN cho aws-load-balancer-controller Helm chart"
   value       = aws_iam_role.aws_lb_controller.arn

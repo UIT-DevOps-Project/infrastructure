@@ -23,6 +23,11 @@ variable "eks_node_sg_id" {
   type        = string
 }
 
+variable "eks_cluster_sg_id" {
+  description = "EKS auto-created cluster SG ID — gắn vào nodes bởi managed node groups"
+  type        = string
+}
+
 variable "db_name" {
   description = "Initial database name"
   type        = string
